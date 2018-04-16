@@ -22,41 +22,50 @@ hello3.c
 
 hello4.c
 >gcc -E -o hello4.i hello4.c
+
 >gcc -S hello4.i
 
 -Aparece warning en alusion a la funcion prontf 
 
 >gcc -c hello4.s
+
 >gcc -o hello4 hello4.o
 
 -Al generar ejecutable no esta definida prontf, error ld returned 1 exit status
 
 hello5.c
 >gcc -E -o hello5.i hello5.c
+
 >gcc -S hello5.i
 
 -Aparece warning en alusion al formato "%d" espera argumento int
 
 >gcc -c hello5.s
+
 >gcc -o hello5 hello5.o
 
 -Al ejecutarlo aparece "La respuesta es 1"
 
 hello6.c
 >gcc -E -o hello6.i hello6.c
+
 >gcc -S hello6.i
+
 >gcc -c hello6.s
+
 >gcc -o hello6 hello6.o
 
 -No presenta errores, al ejecutar sale la leyenda "La respuesta es 42"
 
 hello7.c
 >gcc -E -o hello7.i hello7.c
+
 >gcc -S hello7.i
 
 -Aparece warning por no haber declarado la funcion printf y una nota que se incluye "<stdio.h>"
 
 >gcc -c hello7.s
+
 >gcc -o hello7 hello7.o
 
 -Al ejecutarlo aparece la leyenda "La respuesta es 42" sin problemas. Funciona por que el gcc compiler incluye la <stdio.h> por default.
