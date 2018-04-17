@@ -19,6 +19,7 @@ hello3.c
 >gcc -S hello3.i
 
 -Al compilar aparece warning en alusion a la funcion prontf y un error en declaración o declaración esperada al final de la entrada
+-int printf(const char *s, ...); Es una la declaracion de una funcion que retorna un entero y espera por argumento al menos una constante del tipo char puntero.
 
 hello4.c
 >gcc -E -o hello4.i hello4.c
@@ -26,6 +27,7 @@ hello4.c
 >gcc -S hello4.i
 
 -Aparece warning en alusion a la funcion prontf 
+-Al abrir hello4.s aparece el codigo assembler 
 
 >gcc -c hello4.s
 
