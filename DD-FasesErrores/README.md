@@ -27,7 +27,7 @@ hello4.c
 >gcc -S hello4.i
 
 -Aparece warning en alusion a la funcion prontf 
--Al abrir hello4.s aparece el codigo assembler 
+-Al abrir hello4.s aparece el codigo assembler: Este es un codigo de mas bajo nivel que C, en el podemos ver instrucciones como push, pop, mov, and, sub, add, call, leave y algunas mas. Se puede observar movimientos de registros, cambios de de direccion de memoria del base pointer y el stack pointer, ademas de una call a prontf. 
 
 >gcc -c hello4.s
 
