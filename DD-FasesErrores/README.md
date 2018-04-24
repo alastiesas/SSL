@@ -70,5 +70,5 @@ hello7.c
 
 >gcc -o hello7 hello7.o
 
--Al ejecutarlo aparece la leyenda "La respuesta es 42" sin problemas. Funciona por que el gcc compiler incluye la <stdio.h> por default.
+-Al ejecutarlo aparece la leyenda "La respuesta es 42" sin problemas. Funciona por que <stdio.h> esta implicitamente.
 
